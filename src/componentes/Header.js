@@ -1,6 +1,9 @@
 import {Link} from 'react-router-dom';
 
-function Header(){
+//componentes
+import Buscador from './Buscador';
+
+function Header(props){
     return(
         <header>
             <nav>
@@ -9,6 +12,7 @@ function Header(){
                     <Link To="/listado">Listado Home</Link>
                     <Link To="/contac">Contac</Link>
                 </ul>
+                <Buscador/>
             </nav>
         </header>
     )

@@ -36,9 +36,12 @@ function Listado(){
                     return(
                         <>
                         <div className='col-3' key={idx}>Peli 1</div>
+                        <button className='favourite-btn' onClick={props.addOrRemoveFromFavs}>insertar emoji</button>
                      {/* Aqui las tarjetas de bootstrap(es un ejemplo de peliculas)  */}
-                        <Link to={`detalle?movieID=${oneMovie.id}`} className='btn btn-primary'>Ver detalle</Link>
+                     {/* Query string es toda aquella información valiosa que enviamos en la URL. */}
+                        <Link to={`detalle?movieID=${oneMovie.id}`} className='btn btn-primary' data-movie-id={oneMovie.id}>Ver detalle</Link>
                         </>
+                        // averiguar atributos data
                     )
                 })
             };
