@@ -23,7 +23,7 @@ function Login(){
               MySwal.fire({
                 title: <h2>Debes escribir una dirección de correo electrónico válida</h2>,
                 icon: 'error'
-            });
+              });
             }
 
             console.log("ok estamos listos para enviar la informacion");
